@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Volume 5 | HISTÓRIA | Grandes diferenças econômicas e sociais</title>
+
+        <!--CSS-->
+
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./css/bootstrap.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+
+</head>
+<body>
+    <div class="slide">
+        <div class="sld" id="sld-0">
+         <h1 class="display-4 text-center">Índice de Desenvolvimento</h1>
+         <img src="./img/idhbrasil.png">
+            <p class="fs-5">
+                Este mapa apresenta informações sobre desenvolvimento humano em
+                alguns países da América Latina. Esses dados estão no Relatório
+                de Desenvolvimento Humano de 2014 do Programa das Nações Unidas
+                para o Desenvolvimento (PNUD).
+                <br><br>
+                O IDH é composto de indicadores sociais e econômicos.
+                Com base no resultado, os países são classificados em
+                um <i>ranking</i>. O IDH relaciona dados referêntes a
+                saúde (expectativa de vida), ao conhecimento (tempo de 
+                escolarização) e à economia (Renda Nacional Bruta) da 
+                população do país.
+            </p>
+            <button class="btn btn-dark next" onclick="controls(0, 1)">&gt;</button>
+             
+
+
+        </div>
+        <div class="sld hide" id="sld-1">
+            <p class="fs-5">
+               <b>1.</b> O primeiro relatório do PNUD foi publicado em 1990 contendo a ideia de que “As pessoas são a verdadeira riqueza de uma nação”. Com base nessa ideia, utilize a tabela para analisar os dados referentes ao tempo de escolaridade e aos indicadores de desenvolvimento humano dos países. Na sequência, verifique as afirmativas seguintes e escolha a alternativa correta.
+            </p>
+                        <table border="1">
+                            <tr>
+                                <th>País</th>
+                                <th>IDH</th>
+                                <th>Média de anos <br> de escolaridade</th>
+                                <th>Espectativa <br> de vida</th>
+
+                            </tr>
+                            <tr>
+                                
+                                <td>Argentina</td>
+                                <td>0.84</td>
+                                <td>9,3</td>
+                                <td>75,99</td>
+                            </tr>
+                            <tr>
+                             
+                                <td>Chile</td>
+                                <td>0.83</td>
+                                <td>9,7</td>
+                                <td>81,20</td>
+                            </tr>
+                            <tr>
+                            
+                                <td>Uruguai</td>
+                                <td>0.79</td>
+                                <td>8,5</td>
+                                <td>76,84</td>
+                            </tr>
+                            <tr>
+                       
+                              <td>Venezuela</td>
+                              <td>0.76</td>
+                              <td>7,6</td>
+                              <td>74,40</td>
+                            </tr>
+                            <tr>
+                            
+                                <td>Brasil</td>
+                                <td>0.76</td>
+                                <td>7,2</td>
+                                <td>74,12</td>
+                            </tr>
+                            <tr>
+                      
+                                <td>Peru</td>
+                                <td>0.73</td>
+                                <td>8,7</td>
+                                <td>74,28</td>
+                            </tr>
+                            <tr>
+                      
+                                <td>Equador</td>
+                                <td>0.73</td>
+                                <td>7,6</td>
+                                <td>75,65</td>
+                            </tr>
+                            <tr>
+                 
+                                <td>Colômbia</td>
+                                <td>0.72</td>
+                                <td>7,3</td>
+                                <td>73,81</td>
+                            </tr>
+                            <tr>
+                        
+                                <td>Suriname</td>
+                                <td>0.71</td>
+                                <td>7,2</td>
+                                <td>70,99</td>
+                            </tr>
+                            <tr>
+                          
+                                <td>Paraguai</td>
+                                <td>0.68</td>
+                                <td>7,7</td>
+                                <td>72,80</td>
+                            </tr>
+                            <tr>
+                         
+                                <td>Bolívia</td>
+                                <td>0.66</td>
+                                <td>9,2</td>
+                                <td>67,91</td>
+                            </tr>
+                            <tr>
+                         
+                                <td>Guiana</td>
+                                <td>0.64</td>
+                                <td>8,5</td>
+                                <td>66,31</td>
+                            </tr>
+                        </table>
+      
+            <div class="btn-group-vertical" role="group" aria-label="Basic checkbox toggle button group">
+                <label class="btn btn-outline-primary" id="btncheck1" onclick="showAnswer(0)">I. Quanto menor o tempo médio de escolarização, melhores são os indicadores.</label>
+              
+    
+                <label class="btn btn-outline-primary" id="btncheck2" onclick="showAnswer(1)">II. Quanto maior o tempo médio de escolarização, piores são os indicadores.</label>
+              
+
+                <label class="btn btn-outline-primary" id="btncheck3" onclick="showAnswer(2)">III. Quanto menor o tempo médio de escolarização, piores são os indicadores.</label>
+
+                <label class="btn btn-outline-primary" id="btncheck4" onclick="showAnswer(3)">IV. Quanto maior o tempo médio de escolarização, melhores são os indicadores.</label>
+              </div>
+            
+                <button class="btn btn-dark previous" onclick="controls(1, 0)">&lt;</button>
+                <button class="btn btn-dark next" onclick="controls(1, 2)">&gt;</button>
+            </div>
+            
+    <div class="sld hide" id="sld-2">
+            <p class="fs-5">
+                <b>2.</b> Analise os dados da tabela e responda às questões seguintes nos respectivos campos.
+            <br>
+            <div class="questions">
+            
+             <br>a) Qual é o país com o maior IDH?<br>
+             <div class="input-group">
+                <select class="form-select" id="inputGroupSelect0" aria-label="Example select with button addon">
+                  <option selected>Opções</option>
+                  <option value="1">Guiana</option>
+                  <option value="2">Uruguai</option>
+                  <option value="3">Venezuela</option>
+                  <option value="4">Argentina</option>
+                  <option value="5">Brasil</option>
+                  <option value="6">Chile</option>
+                  <option value="7">Peru</option>
+                  <option value="8">Colômbia</option>
+                  <option value="9">Suriname</option>
+                  <option value="10">Bolívia</option>
+                  <option value="11">Equador</option>
+                  <option value="12">Paraguai</option>
+                </select>
+                
+                <button class="btn btn-outline-primary" type="button" onclick="checkAnswer(0)">Conferir</button>
+              </div>
+
+
+
+             <br>b) Qual é o país com a segunda maior expectativa de vida?<br>
+             <div class="input-group">
+                <select class="form-select" id="inputGroupSelect1" aria-label="Example select with button addon">
+                  <option selected>Opções</option>
+                  <option value="1">Guiana</option>
+                  <option value="2">Uruguai</option>
+                  <option value="3">Venezuela</option>
+                  <option value="4">Argentina</option>
+                  <option value="5">Brasil</option>
+                  <option value="6">Chile</option>
+                  <option value="7">Peru</option>
+                  <option value="8">Colômbia</option>
+                  <option value="9">Suriname</option>
+                  <option value="10">Bolívia</option>
+                  <option value="11">Equador</option>
+                  <option value="12">Paraguai</option>
+                </select>
+                <button class="btn btn-outline-primary" type="button" onclick="checkAnswer(1)">Conferir</button>
+              </div>
+             <br>c) Enumere os países de acordo com o tempo médio de escolarização, começando pelo maior índice. <br>
+             <div class="form-floating">
+                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                <label for="floatingTextarea2">Resposta</label>
+              </div>
+            </div>
+            </p>
+
+             <button class="btn btn-dark previous" onclick="controls(2, 1)">&lt;</button>
+    
+        
+        
+    </div>
+
+    <div id="modal-creditos" class="modal-container hide">
+        <div class="modal-layout">
+            <div class="d-grid gap-2 d-sm-flex justify-content-md-end">
+                <button class="btn btn-primary me-md-2" onclick="openModal()">x</button>
+            </div>
+                <div class="modal-content">
+            		<h2>Grandes diferenças econômicas e sociais</h2>
+					
+					<hr>
+					<p class="dir">trade mark</p>
+				</div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+
+		<button type="button" class="button creditos" onclick="openModal('show')">
+			©
+		</button>
+	</footer>
+
+    <!-- Js -->
+    <script src="./js/script.js"></script>
+    
+</body>
+</html>
